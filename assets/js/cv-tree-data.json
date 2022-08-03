@@ -30,7 +30,7 @@
             {
                 "title": "Teaching Assistant",
                 "subtitle": "Technical University of Denmark",
-                "description": "Assisted students in the course 02170 - Database Systems with understanding the curriculum in order to solve the course exercises. Furthermore, I evaluated assignments and provided feedback on slides/teaching material for the lecturer.",
+                "description": "Assisted students in the course <b>02170 - Database Systems</b> with understanding the curriculum in order to solve the course exercises. Furthermore, I evaluated assignments and provided feedback on slides/teaching material for the lecturer.",
                 "yearBegin": 2017,
                 "significance": 8,
                 "textMarginLeft": -10,
@@ -51,7 +51,9 @@
                 "textPosition": "left",
                 "nodePosition": "middle",
                 "nodeColor": "#6244C5",
-                "type": "Studies"
+                "type": "Studies",
+                "textPositionMedium": "right",
+                "textMarginTopMedium": -60
             },
             {
                 "title": "Analyst",
@@ -70,7 +72,7 @@
             {
                 "title": "Teaching Assistant",
                 "subtitle": "Technical University of Denmark",
-                "description": "I assisted DTU students in the course 02806 - Social Data Analysis and Visualization with Python coding, Javascript coding and visualization theory. Furthermore, I evaluated assignments in collaboration with the other teaching assistants and the lecturer. I also provided feedback on the teaching material.",
+                "description": "I assisted DTU students in the course <b>02806 - Social Data Analysis and Visualization</b> with Python coding, Javascript coding and visualization theory. Furthermore, I evaluated assignments in collaboration with the other teaching assistants and the lecturer. I also provided feedback on the teaching material.",
                 "yearBegin": 2019,
                 "significance": 8,
                 "textMarginLeft": 0,
@@ -155,14 +157,18 @@
                 "textPosition": "left",
                 "nodePosition": "middle",
                 "nodeColor": "#6244C5",
-                "type": "Work"
+                "type": "Work",
+                "textPositionMedium": "right",
+                "textMarginTopMedium": -150,
+                "textMarginLeftMedium": 0,
+                "nodePositionMedium": "left"
             },
             {
                 "title": "My son was born",
                 "description": "I am now a father of a very healthy baby.",
                 "yearBegin": 2022,
                 "significance": 8,
-                "textMarginLeft": 155,
+                "textMarginLeft": 150,
                 "textMarginTop": 10,
                 "textPosition": "left",
                 "nodePosition": "right",

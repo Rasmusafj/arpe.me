@@ -17,6 +17,7 @@ function handleOpenSourceFilterClick(e) {
         element.classList.remove('active')
     });
 
+    
     Array.from(document.getElementById("open-source-items").children).forEach(element => {
         if (Array.from(element.classList).includes(value) || value === "all") {
             element.style.visibility = "visible";
