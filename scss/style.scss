@@ -84,6 +84,24 @@ $enable-shadows: false;
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/print";
 
+.content-header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.content-header::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 3px;
+  bottom: 20px;
+  left: 200;
+  background: $primary;
+}
+
 
 .robo-bold {
   font-weight: bold;
@@ -97,13 +115,38 @@ $enable-shadows: false;
 #home-image {
   max-width: 50%;
   position: absolute;
-  bottom:0;
-  right:0;
+  bottom: 0;
+  right: 0;
+}
+
+#home-first-row {
+  margin-top: 200;
 }
 
 .full-view-height {
   height: 100vh;
 }
+
+.btn-align-home {
+  align-items: center !important;
+}
+
+@media only screen and (max-width: 768px) {
+  #home-image {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: auto;
+    right: auto;
+    bottom: -30vh;
+  }
+
+  .full-view-height {
+    height: 130vh;
+  }
+}
+
+
 
 .btn {
   font-weight: 400;
