@@ -292,6 +292,7 @@ async function drawCvTree(includeList, numberOfNodesHeight) {
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip")
+            .attr("id", "tooltip-small-screen-id")
             .style("background-color", "white")
             .style("border", "solid")
             .style("border-width", "2px")
@@ -361,6 +362,10 @@ function clearDrawing() {
     infoBoxes.forEach(box => {
         box.remove();
     });
+    const tooltipSmallScreen = document.getElementById('tooltip-small-screen-id');
+    if (tooltipSmallScreen !== null && tooltipSmallScreen !== undefined) {
+        tooltipSmallScreen.remove();
+    }
 }
 
 function buttonClickRedrawCvTree(event) {
@@ -418,6 +423,7 @@ document.getElementById("timeline-buttons").addEventListener('click', buttonClic
 
 function doRedrawNotFilterEvent() {
     clearDrawing();
+
     let numberNodes = 1;
     if (currentToggle.includes("All")) {
         numberNodes = allNumberNodes;
