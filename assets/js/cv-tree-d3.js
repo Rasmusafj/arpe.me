@@ -300,7 +300,7 @@ async function drawCvTree(includeList, numberOfNodesHeight) {
             .style("border-radius", "5px")
             .style("padding", "5px");
 
-        var mouseover = function (d) {
+        var mouseover = function (event, d) {
             smallScreenTooltip
                 .style("opacity", 1)
             d3.select(this)
@@ -311,14 +311,14 @@ async function drawCvTree(includeList, numberOfNodesHeight) {
         const containerOffsetLeft = document.getElementById("chartId").offsetLeft;
         const containerOffsetTop = document.getElementById("chartId").offsetTop;
 
-        var mousemove = function (d) {
+        var mousemove = function (event, d) {
             smallScreenTooltip
-                .html(d.path[0].__data__.nodeText.getHtml())
+                .html(d.nodeText.getHtml())
                 .style("left", `${containerOffsetLeft}px`)
-                .style("top", `${containerOffsetTop + 100 + d3.pointer(d)[1]}px`)
+                .style("top", `${containerOffsetTop + 100 + d3.pointer(event)[1]}px`)
         }
 
-        var mouseleave = function (d) {
+        var mouseleave = function (event, d) {
             smallScreenTooltip
                 .style("opacity", 0)
                 .style("left", 0)
