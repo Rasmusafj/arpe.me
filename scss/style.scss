@@ -112,15 +112,11 @@ $enable-shadows: false;
   background-size: contain;
 }
 
-#home-image {
-  max-width: 50%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 
 #home-first-row {
+  padding-top: 100px;
   margin-top: 200;
+  height: 85vh;
 }
 
 .full-view-height {
@@ -219,19 +215,38 @@ $enable-shadows: false;
   max-width: 75%;
 }
 
-@media only screen and (max-width: 768px) {
+#home-image {
+  max-width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 550px) {
   #home-image {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: auto;
-    right: auto;
-    bottom: -30vh;
+    max-width: 100%;
+    position: relative;
   }
 
   .full-view-height {
     height: 130vh;
   }
+
+}
+
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+  #home-image {
+    max-width: 85%;
+    position: relative;
+  }
+
+  .full-view-height {
+    height: 130vh;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
 
   .skill-card-image {
     max-width: 30%;
@@ -244,5 +259,12 @@ $enable-shadows: false;
     margin-right: auto;
     height: 100px;
   }
-  
+}
+
+#flexiboy {
+  display: flex; flex-direction: column;
+}
+
+#flex-div-1 {
+  flex-grow: 1;
 }

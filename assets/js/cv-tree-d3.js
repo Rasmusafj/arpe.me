@@ -1,4 +1,5 @@
 import * as d3 from 'd3';
+import { style } from 'd3';
 
 var extraHeightSubtract = 200;
 var margin = { top: 70, right: 70, bottom: 30, left: 70 };
@@ -291,10 +292,10 @@ async function drawCvTree(includeList, numberOfNodesHeight) {
         var smallScreenTooltip = d3.select("div#chartId")
             .append("div")
             .style("opacity", 0)
-            .attr("class", "tooltip")
-            .attr("id", "tooltip-small-screen-id")
+            .attr("class", "tooltip tooltip-small-screen-id")
             .style("background-color", "white")
             .style("border", "solid")
+            .style("max-width", "80%")
             .style("border-width", "2px")
             .style("border-radius", "5px")
             .style("padding", "5px");
@@ -358,7 +359,7 @@ drawCvTree(currentToggle, allNumberNodes);
 
 function clearDrawing() {
     d3.select("#g-inside-svg").selectAll("*").remove();
-    const infoBoxes = document.querySelectorAll('.tooltip-div');
+    const infoBoxes = document.querySelectorAll('.tooltip-div, .tooltip-small-screen-id');
     infoBoxes.forEach(box => {
         box.remove();
     });
@@ -445,5 +446,8 @@ if (isWidthSmall()) {
     document.getElementById("timeline-text").innerHTML = innerHtmlDesc + "Click on the circles to see more info about the event. However, switch to a larger screen for a much better experience! :-)"
 }
 
-window.addEventListener("resize", doRedrawNotFilterEvent, false);
+if (!isWidthSmall()) {
+    window.addEventListener("resize", doRedrawNotFilterEvent, false);
+}
+
   
