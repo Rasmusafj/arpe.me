@@ -202,7 +202,6 @@ async function drawCvTree(includeList, numberOfNodesHeight) {
         let nodePosition = nodeData.nodePosition;
         let nodeTextMarginLeft = nodeData.textMarginLeft;
         if (isWidthMedium()) {
-            console.log(nodeData.textPositionMedium);
             if (nodeData.textPositionMedium !== null && nodeData.textPositionMedium !== undefined) {
                 nodeTextPosition = nodeData.textPositionMedium
             }
@@ -417,10 +416,28 @@ function buttonClickRedrawCvTree(event) {
 
 document.getElementById("timeline-buttons").addEventListener('click', buttonClickRedrawCvTree);
 
+function doRedrawNotFilterEvent() {
+    clearDrawing();
+    let numberNodes = 1;
+    if (currentToggle.includes("All")) {
+        numberNodes = allNumberNodes;
+    };
+    if (currentToggle.includes("Work")) {
+        numberNodes += professionalNumberNodes;
+    };
+    if (currentToggle.includes("Studies")) {
+        numberNodes += studiesNumberNodes;
+    };
+    if (currentToggle.includes("Personal")) {
+        numberNodes += personalNumberNodes;
+    };
+    drawCvTree(currentToggle, numberNodes);
+}
+
 if (isWidthSmall()) {
     const innerHtmlDesc = document.getElementById("timeline-text").innerHTML;
     document.getElementById("timeline-text").innerHTML = innerHtmlDesc + "Click on the circles to see more info about the event. However, switch to a larger screen for a much better experience! :-)"
-
-    
 }
-document.getElementById("timeline-text")
+
+window.addEventListener("resize", doRedrawNotFilterEvent, false);
+  
