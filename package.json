@@ -1,0 +1,46 @@
+{
+  "name": "arpe-cv",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CV webpage for Rasmus Arpe Fogh Egebæk",
+  "author": "Rasmus Arpe Fogh Egebæk",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run css",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
+    "css-lint": "stylelint scss/",
+    "css-prefix": "postcss --replace assets/css/style.css --use autoprefixer --map",
+    "css-purge": "purgecss --keyframes --css assets/css/style.css --content index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output assets/css/",
+    "css": "npm-run-all css-compile css-prefix",
+    "js-compile": "webpack --mode=production",
+    "css-js": "npm-run-all css js-compile",
+    "server": "serve --listen 3000",
+    "start": "npm-run-all --parallel watch server",
+    "watch": "nodemon -e html,scss,js -x \"npm run css-js\"",
+    "test": "npm run css-lint && npm run css"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.0",
+    "d3": "^7.6.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "typed.js": "^2.0.12"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.9",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.5",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "purgecss": "^4.0.2",
+    "serve": "^14.0.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-twbs-bootstrap": "^2.1.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

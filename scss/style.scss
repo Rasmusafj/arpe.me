@@ -1,0 +1,193 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$primary: #33658A;
+$secondary: #F6AE2D;
+$third: #F26419;
+$light: #FAFAFB;
+$dark: #12141D;
+
+
+// #3581B8
+// #FCB07E
+// #DEE2D6
+
+// #2F4858
+// #33658A
+// #86BBD8
+// #F6AE2D
+// #F26419
+
+$font-family-base: 'Roboto';
+
+$body-color: #5A5A5A;
+
+$headings-color: $dark;
+
+$headings-font-weight: 600;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 10px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+// Toggle global options
+$enable-gradients: false;
+$enable-shadows: false;
+
+
+@import "bootstrap/scss/functions"; // Required
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+
+@import "bootstrap/scss/root"; // Required
+@import "bootstrap/scss/reboot"; // Required
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/input-group"; // Requires forms
+@import "bootstrap/scss/custom-forms";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/jumbotron";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/media";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal"; // Requires transitions
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/print";
+
+
+.robo-bold {
+  font-weight: bold;
+}
+
+#home {
+  background: url(../img/background_network.png) left top no-repeat;
+  background-size: contain;
+}
+
+#home-image {
+  max-width: 50%;
+  position: absolute;
+  bottom:0;
+  right:0;
+}
+
+.full-view-height {
+  height: 100vh;
+}
+
+.btn {
+  font-weight: 400;
+  transition: 1.5s;
+  border: 0;
+  box-shadow: none;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.tooltip-div {
+  position: absolute;
+  padding: 5px;
+  max-width: 500px;
+}
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+}
+
+.technology {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  display: inline-block;
+  padding: 6px 30px;
+  height: 50px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.skill-text {
+  padding-top: 5px;
+}
+
+.pretty-filter li {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--dark);
+  cursor: pointer;
+  transition: .5s;
+  border-bottom: 2px solid transparent;
+}
+
+.pretty-filter li:hover,
+.pretty-filter li.active {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.open-source-image {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+}
+
+.skill-card-image {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
+
+.open-source-button {
+   margin-top: auto; 
+}
+
+#contact {
+  height: 50vh;
+}
+
+#contact-image {
+  max-width: 75%;
+}
