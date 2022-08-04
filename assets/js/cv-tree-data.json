@@ -2,7 +2,7 @@
     "common": [
             {
                 "title": "I was born",
-                "description": "And my birthday is the 12th of july.",
+                "description": "And my birthday is the 12th of July.",
                 "yearBegin": 1993,
                 "significance": 8,
                 "textMarginLeft": -20,
@@ -17,7 +17,7 @@
             {
                 "title": "I begin studying Computer Science Engineering",
                 "subtitle": "Technical University of Denmark",
-                "description": "During my studies I was very social and outgoing. I was part of coordinating the study start, president for the student council for math and software students and I even received a reward for my effors in the Social sector of Polyteknisk Forening (PF).",
+                "description": "During my studies I was very social and outgoing. I was part of coordinating the study start, president for the student council for math and software students and I even received a reward for my efforts in the Social sector of Polyteknisk Forening (PF).",
                 "yearBegin": 2013,
                 "significance": 8,
                 "textMarginLeft": 0,
@@ -83,7 +83,7 @@
                 "type": "Work"
             },
             {
-                "title": "I get my Masters Degree in Digital Media Engineering (Msc)",
+                "title": "I get my Masters Degree in Digital Media Engineering (MSc)",
                 "subtitle": "Technical University of Denmark",
                 "description": "I specialized in data processing, data analysis and machine learning. During my thesis, we created DanSpeech, a state-of-the-art (at the time) automatic speech recognition system for Danish.",
                 "yearBegin": 2019,
@@ -98,7 +98,7 @@
             {
                 "title": "Research Assistant",
                 "subtitle": "Technical University of Denmark",
-                "description": "Open-sourcing of DanSpeech and our DeepSpeech 2 Automatic Speech Recognition models for Danish. Furthermore, I conducted Multiple experiments such as multilingual Automatic Speech Recognition, distillation of large deep learning models and Unidirectional Automatic Speech Recognition models for real time inference.",
+                "description": "Open-sourcing of DanSpeech and our DeepSpeech 2 Automatic Speech Recognition models for Danish. Furthermore, I conducted multiple experiments such as multilingual Automatic Speech Recognition, distillation of large deep learning models and Unidirectional Automatic Speech Recognition models for real time inference.",
                 "yearBegin": 2019,
                 "significance": 8,
                 "textMarginLeft": 0,
