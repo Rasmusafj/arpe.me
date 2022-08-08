@@ -164,11 +164,11 @@
                 "nodePositionMedium": "left"
             },
             {
-                "title": "My son is going to be born!",
-                "description": "We expect him within a week!",
+                "title": "My son was born",
+                "description": "I became a father!",
                 "yearBegin": 2022,
                 "significance": 8,
-                "textMarginLeft": 150,
+                "textMarginLeft": 280,
                 "textMarginTop": 10,
                 "textPosition": "left",
                 "nodePosition": "right",
