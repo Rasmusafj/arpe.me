@@ -165,10 +165,10 @@
             },
             {
                 "title": "My son was born",
-                "description": "I became a father!",
+                "description": "And his first two books were Neural Networks for Babies and Bayesian Probability for Babies",
                 "yearBegin": 2022,
                 "significance": 8,
-                "textMarginLeft": 280,
+                "textMarginLeft": 0,
                 "textMarginTop": 10,
                 "textPosition": "left",
                 "nodePosition": "right",
