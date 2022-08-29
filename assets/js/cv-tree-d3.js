@@ -350,7 +350,7 @@ async function drawCvTree(includeList, numberOfNodesHeight) {
 // Hardcode values... 
 var currentToggle = ['All']
 
-var professionalNumberNodes = 8;
+var professionalNumberNodes = 10;
 var personalNumberNodes = 3;
 var studiesNumberNodes = 3;
 var allNumberNodes = professionalNumberNodes + personalNumberNodes + studiesNumberNodes;

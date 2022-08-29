@@ -2,7 +2,7 @@
     "common": [
             {
                 "title": "I was born",
-                "description": "And my birthday is the 12th of July.",
+                "description": "And my birthday is the 12th of July which makes me 29 years old.",
                 "yearBegin": 1993,
                 "significance": 8,
                 "textMarginLeft": -20,
@@ -58,7 +58,7 @@
             {
                 "title": "Analyst",
                 "subtitle": "Netcompany",
-                "description": "I primarily worked with one of the largest social benefits IT systems in Denmark during my time as an Analyst at Netcompany. My work was focused on developing business logic code (sometimes in collaboration with the client) and fixing bugs.",
+                "description": "I primarily worked with one of the largest social benefits IT systems in Denmark during my time as an Analyst at Netcompany. My work was focused on developing business logic code in java occasionally also writing SQL statements and fixing bugs.",
                 "yearBegin": 2017,
                 "yearEnd": 2018,
                 "significance": 8,
@@ -111,7 +111,7 @@
             {
                 "title": "IT Consultant",
                 "subtitle": "Netcompany",
-                "description": "Software development as an IT consultant on various projects ranging from 5-100+ participants. Technologies used: Kafka, Angular, SQL, Java, Groovy, Kotlin, Spring, Hibernate, Ebean, Flyway, Liquibase, Gradle, Git, REST, SOAP, AWS, Docker, Openshift, Terraform etc.",
+                "description": "Software development as an IT consultant on various projects ranging from 5-100+ participants. I worked on projects concerned with validating, enriching, processing and storing data in various ways and I enjoyed working with a great variety of technologies.",
                 "yearBegin": 2019,
                 "significance": 8,
                 "textMarginLeft": 0,
@@ -122,13 +122,26 @@
                 "type": "Work"
             },
             {
-                "title": "Research Assistant",
-                "subtitle": "Technical University of Denmark",
-                "description": "Research within Automatic Speech Recognition, prototyping and business development of the speech recognition company Alvenir. Funded by InnoExplorer grant from Innovation Fund Denmark.",
-                "yearBegin": 2021,
+                "title": "DanSpeech project gets initial funding",
+                "subtitle": "DanSpeech pre-company",
+                "description": "Attended meetings with stakeholders and began prototyping various systems based on speech recognition technology for gaining business critical insights from speech. This was done in my spare time while working as an IT consultant.",
+                "yearBegin": 2020,
                 "significance": 8,
                 "textMarginLeft": 0,
-                "textMarginTop": 0,
+                "textMarginTop": -10,
+                "textPosition": "right",
+                "nodePosition": "middle",
+                "nodeColor": "#6244C5",
+                "type": "Work"
+            },
+            {
+                "title": "DanSpeech project gets InnoExplorer funding",
+                "subtitle": "DanSpeech pre-company",
+                "description": "With the InnoExplorer funding, I start working in DanSpeech full-time. Some highlights include creating state-of-the-art speech recognition models, initial development of our speech recognition platform ameya, research together with stakeholders and various data pipelines to improve machine learning models.",
+                "yearBegin": 2020,
+                "significance": 8,
+                "textMarginLeft": -20,
+                "textMarginTop": -20,
                 "textPosition": "left",
                 "nodePosition": "right",
                 "nodeColor": "#6244C5",
@@ -147,10 +160,10 @@
                 "type": "Personal"
             },
             {
-                "title": "Chief Technical Officer and Co-Founder",
+                "title": "Chief Technical Officer and Co-founder",
                 "subtitle": "Alvenir",
-                "description": "I Co-Founded Alvenir together with a DTU Professor, two angel investors and a Partner. I'm still part of the company as a Board Member. I developed our speech recognition platform Ameya, a cloud native platform for speech recognition with horizontal scaling, multiple languages and customizable inference pipelines with multiple task specific modules.  I also trained of machine learning models for Automatic Speech Recognition and various Natural Language Processing tasks and created pipelines for data mining machine learning training data such as text, speech and audio. Technologies used: Kafka, kubernetes, Helm, docker, Python, onnx, fastAPI, django, Angular, sqlalchemy, gcp, aws etc.",
                 "yearBegin": 2021,
+                "description": "I Co-founded Alvenir together with a DTU Professor, two angel investors and a Partner. I maintained a great variety of tasks such as training state-of-the-art machine learning models, managing machine learning models in production, data analysis tasks and software development of our speech recognition platform Ameya; a cloud platform for speech recognition with horizontal scaling, multiple languages and customizable inference pipelines with multiple task specific modules.",
                 "significance": 8,
                 "textMarginLeft": -20,
                 "textMarginTop": -60,
@@ -164,8 +177,25 @@
                 "nodePositionMedium": "left"
             },
             {
-                "title": "My son was born",
-                "description": "And his first two books were Neural Networks for Babies and Bayesian Probability for Babies",
+                "title": "Board Bember",
+                "subtitle": "Alvenir",
+                "yearBegin": 2022,
+                "description": "I decided to transition to a board member role in August, where I advise Alvenir on software architecture, infrastructure, data pipelines, training of machine learning models, MLOps and strategic technical goals.",
+                "significance": 8,
+                "textMarginLeft": -20,
+                "textMarginTop": -60,
+                "textPosition": "left",
+                "nodePosition": "right",
+                "nodeColor": "#6244C5",
+                "type": "Work",
+                "textPositionMedium": "right",
+                "textMarginTopMedium": -150,
+                "textMarginLeftMedium": 0,
+                "nodePositionMedium": "left"
+            },
+            {
+                "title": "My son was born in August",
+                "description": "And his first two books were Neural Networks for Babies and Bayesian Probability for Babies.",
                 "yearBegin": 2022,
                 "significance": 8,
                 "textMarginLeft": 0,
@@ -176,8 +206,8 @@
                 "type": "Personal"
             },
             {
-                "title": "Looking for new opportunities as a (senior) Machine Learning Engineer / Data Scientist",
-                "description": "I'm a young, passionate and skillful programmer looking for the right company. I bring a huge amount of machine learning knowledge which spans the full spectrum of having machine learning models in production i.e. from research, experimentation, model development to model deployment and MLOps. I value exciting and challenging problems, flexibility and work-life balance.",                "yearBegin": 2022,
+                "title": "Looking for new opportunities as a Data Scientist / Machine Learning Engineer",
+                "description": "I'm a young, passionate and skillful programmer looking for the right company. I bring a huge amount of machine learning knowledge which includes knowledge about MLOps. I value exciting and challenging problems, flexibility and work-life balance.",                "yearBegin": 2022,
                 "significance": 8,
                 "textMarginLeft": -20,
                 "textMarginTop": -50,
