@@ -206,11 +206,12 @@
                 "type": "Personal"
             },
             {
-                "title": "Looking for new opportunities as a Data Scientist / Machine Learning Engineer",
-                "description": "I'm a young, passionate and skillful programmer looking for the right company. I bring a huge amount of machine learning knowledge which includes knowledge about MLOps. I value exciting and challenging problems, flexibility and work-life balance.",                "yearBegin": 2022,
+                "title": "New opportunity!",
+                "description": "I found the perfect job that matches my skills and ambitions. It's gonna be announced in November.",
+                "yearBegin": 2022,
                 "significance": 8,
                 "textMarginLeft": -20,
-                "textMarginTop": -50,
+                "textMarginTop": 0,
                 "textPosition": "right",
                 "nodePosition": "middle",
                 "nodeColor": "#6244C5",
